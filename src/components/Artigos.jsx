@@ -18,7 +18,7 @@ const artigos = [
   {
     titulo: "Direito Penal e Sociedade",
     descricao:
-      "O livro Direito Penal e Sociedade reúne artigos acadêmicos que discutem a relação entre o direito penal e questões sociais, como encarceramento massivo, violência de gênero, racismo, feminicídio e justiça restaurativa, oferecendo análises críticas sobre o sistema de justiça criminal no Brasil e alternativas ao modelo punitivista atual.",
+      "O livro Direito Penal e Sociedade reúne artigos acadêmicos que discutem a relação entre o direito penal e questões sociais, como encarceramento massivo, violência de gênero, racismo, feminicídio e justiça restaurativa, oferecendo análises críticas sobre o sistema de justiça Criminal no Brasil e alternativas ao modelo punitivista atual.",
     data: "Dezembro de 2021",
     link: "https://www.caedjus.com/wp-content/uploads/2021/08/06-CAEDJUS2021-Direito-penal-e-sociedade.pdf",
   },
