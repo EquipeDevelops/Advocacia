@@ -34,7 +34,7 @@ const Contato = () => {
     e.preventDefault();
 
     if (formData.contato === "whatsapp") {
-      const whatsappUrl = `https://wa.me/5582993663318?text=Nome:%20${encodeURIComponent(
+      const whatsappUrl = `https://wa.me/5582996111737?text=Nome:%20${encodeURIComponent(
         formData.from_name
       )}%0AAssunto:%20${encodeURIComponent(
         formData.assunto
