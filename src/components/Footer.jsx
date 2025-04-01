@@ -19,14 +19,14 @@ const Footer = () => {
           </p>
           <div className={styles.icones}>
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/cristovaos.brito"
               target="_blank"
               rel="noopener noreferrer"
             >
               <i className="fab fa-instagram"></i>
             </a>
             <a
-              href="https://wa.me/55XXXXXXXXX"
+              href="https://wa.me/5582996111737"
               target="_blank"
               rel="noopener noreferrer"
             >
