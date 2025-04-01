@@ -121,7 +121,7 @@ const Contato = () => {
                     formData.contato === "email" ? styles.selectedEmail : ""
                   }`}
                 >
-                  Email
+                  E-mail
                 </button>
               </div>
 
