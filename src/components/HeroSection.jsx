@@ -5,11 +5,10 @@ const HeroSection = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.conteudo}>
-        <h1>Seu parceiro no caminho para a justiça.</h1>
+        <h1>Cristovão brito advocacia.</h1>
         <p>
-          Estou ao seu lado, fornecendo orientação jurídica especializada e
-          apoio inabalável para proteger seus direitos e garantir que a justiça
-          seja feita.
+          Atuação jurídica especializada em processos criminais, Tribunal do
+          Júri e Tribunais Superiores.
         </p>
         <a href="#contato">Agende uma consulta</a>
       </div>

@@ -11,7 +11,7 @@ const Cards = () => {
       <div className={styles.informacoes}>
         <img src={imagemCards} alt="Imagem de exemplo de serviço" />
         <div className={styles.conteudoCard}>
-          <h2>O que ofereco?</h2>
+          <h2>O que ofereço?</h2>
           <p>
             Ofereço consultoria jurídica, defesa penal, assessoria
             constitucional e processual, além de orientação jurídica
@@ -33,15 +33,16 @@ const Cards = () => {
           <h3>
             <FaHandshake /> Defesa em Processos Penais
           </h3>
-          <p>Representação legal em tribunais penais.</p>
-          <p>Defesa em processos criminais.</p>
+          <p>Atuação especializada no Tribunal do júri.</p>
+          <p>Tribunais superiores.</p>
+          <p>Processo criminais em geral.</p>
         </li>
         <li>
           <h3>
             <IoPerson /> Assessoria Constitucional e Processual
           </h3>
           <p>Consultoria em Direito Constitucional.</p>
-          <p>Assistência em questões processuais.</p>
+          <p>Consultoria em Direito Público.</p>
         </li>
         <li>
           <h3>

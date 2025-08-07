@@ -13,9 +13,9 @@ const Footer = () => {
             orientação de meus clientes.
           </p>
           <p>
-            Com vasta experiência e envolvimento em diversas instituições
-            jurídicas, mantenho um compromisso com a ética e a eficiência,
-            buscando sempre a melhor solução para cada caso.
+            Com vasta experiência em diversas instituições jurídicas, mantenho
+            um compromisso com a ética e a eficiência, buscando sempre a melhor
+            solução para cada caso.
           </p>
           <div className={styles.icones}>
             <a

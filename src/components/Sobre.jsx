@@ -1,7 +1,6 @@
 import { useState } from "react";
 import styles from "./Sobre.module.css";
 import foto from "../imgs/logoSite.png";
-import ESAicon from "../imgs/ESAicone.png";
 import FASVIPAicon from "../imgs/FASVIPAicone.png";
 import OABicon from "../imgs/OABicone.png";
 import UFALicon from "../imgs/UFALicone.png";
@@ -40,7 +39,6 @@ const SobreSection = () => {
           <ul className={styles.icones}>
             <img src={UFALicon} alt="icone UFAL" />
             <img src={OABicon} alt="icone OAB" />
-            <img src={ESAicon} alt="icone ESA" />
             <img src={FASVIPAicon} alt="icone FASVIPA" />
             <img src={faculicon} alt="icone FASVIPA" />
           </ul>
