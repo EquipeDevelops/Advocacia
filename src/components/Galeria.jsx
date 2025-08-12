@@ -4,7 +4,7 @@ import imgEscrit02 from "../imgs/escritorio02.jpg";
 import imgEscrit03 from "../imgs/escritorio03.jpg";
 import imgEscrit04 from "../imgs/escritorio04.jpg";
 import imgEscrit05 from "../imgs/escritorio05.jpg";
-import imgEscrit06 from "../imgs/escritorio06.jpg";
+import imgEscrit06 from "../imgs/escritorio06.jpeg";
 import styles from "./Galeria.module.css";
 import Modal from "./util/Modal";
 
