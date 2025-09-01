@@ -20,5 +20,72 @@
       },
       { "id": 3, "texto": "", "img": "https://i.ibb.co/7N86VjWR/noticia1-3.jpg" }
     ]
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/C3YxHckQ/IMG-20250830-WA0016.jpg",
+    "titulo":
+      "Nesta terça-feira, 26/08, o dr Cristóvão Brito palestrou no Hospital Clodolfo Rodrigues, em Santana do Ipanema, com o tema: Violência doméstica contra a mulher",
+    "data": "26/08/2025",
+    "noticias": [
+      {
+        "id": 1,
+        "texto":
+          "Aspectos teóricos e práticos da Lei Maria da Penha. Trata-se de evento importante promovido pelo Hospital, no qual foi possível contribuir com dados atuais sobre a violência contra a mulher, apontamentos e reflexões sobre a desigualdade de gênero, controle e poder, aspectos sociais e culturais, bem como o ciclo da violência e do controle punitivo.",
+        "img": "https://i.ibb.co/8nL6sKKL/IMG-20250830-WA0015.jpg"
+      },
+      {
+        "id": 2,
+        "texto":
+          "",
+        "img": "https://i.ibb.co/qMDb2gJv/IMG-20250830-WA0008.jpg"
+      },
+      { "id": 3, "texto": "", "img": "https://i.ibb.co/jcFBw0Q/IMG-20250830-WA0010.jpg" }
+    ]
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/Swwp4G4H/Imagem-do-Whats-App-de-2025-08-30-s-23-02-21-80d64f92.jpg",
+    "titulo":
+      "Dr Cristóvão Brito participa do 2° Módulo do Curso de Persuasão no Tribunal do Júri, ocorrido em Recife, promovido pelo promotor de justiça Danni Sales.",
+    "data": "26/05/2025",
+    "noticias": [
+      {
+        "id": 1,
+        "texto":
+          "",
+        "img": "https://i.ibb.co/N671YdkG/Imagem-do-Whats-App-de-2025-08-30-s-22-57-53-612f5a05.jpg"
+      },
+      {
+        "id": 2,
+        "texto":
+          "",
+        "img": "https://i.ibb.co/BWgg5Z4/Imagem-do-Whats-App-de-2025-08-30-s-22-57-53-91d01455.jpg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/PG8jYG1y/capa-Noticia4.jpg",
+    "titulo":
+      "No último dia 06/08, o dr Cristóvão Brito atua no Tribunal do Juri, em Santana do Ipanema, ao lado do Dr Luiz Tenório.",
+    "data": "06/08/2025",
+    "noticias": [
+    ]
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/sd1fCBph/Imagem-do-Whats-App-de-2025-08-30-s-22-59-18-e54ab410.jpg",
+    "titulo":
+      "Fotos de eventos e participações do mês de Abril",
+    "data": "06/04/2025",
+    "noticias": [
+      {
+        "id": 1,
+        "texto":
+          "",
+        "img": "https://i.ibb.co/NP8zpNq/Imagem-do-Whats-App-de-2025-08-30-s-22-57-54-974db022.jpg"
+      }
+    ]
   }
 ]

@@ -15,17 +15,20 @@
 .noticias {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .capaNoticia {
   display: flex;
+  width: 100%;
   gap: 10px;
   padding: 20px 10px;
 }
 
 .capaNoticia div:first-child {
   width: 100%;
+  max-width: 400px;
   height: 250px;
   background-size: cover;
   background-position: center;
@@ -34,12 +37,13 @@
 
 .capaNoticia div:last-child {
   display: flex;
+  width: 100%;
   flex-direction: column;
   gap: 10px;
 }
 
 .capaNoticia h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--corSecundaria);
   margin-top: 20px;
