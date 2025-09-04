@@ -1,12 +1,12 @@
-import { useEffect, useRef, useState } from "react";
-import imgEscrit01 from "../imgs/escritorio01.jpg";
-import imgEscrit02 from "../imgs/escritorio02.jpg";
-import imgEscrit03 from "../imgs/escritorio03.jpg";
-import imgEscrit04 from "../imgs/escritorio04.jpg";
-import imgEscrit05 from "../imgs/escritorio05.jpg";
-import imgEscrit06 from "../imgs/escritorio06.jpeg";
-import styles from "./Galeria.module.css";
-import Modal from "./util/Modal";
+import { useEffect, useRef, useState } from 'react';
+import imgEscrit01 from '../imgs/escritorio01.jpg';
+import imgEscrit02 from '../imgs/escritorio02.jpg';
+import imgEscrit03 from '../imgs/escritorio03.jpg';
+import imgEscrit04 from '../imgs/escritorio04.jpg';
+import imgEscrit05 from '../imgs/escritorio05.jpg';
+import imgEscrit06 from '../imgs/escritorio06.jpeg';
+import styles from './Galeria.module.css';
+import Modal from './util/Modal';
 
 const GaleriaSection = () => {
   const [inView, setInView] = useState(false);
@@ -30,7 +30,7 @@ const GaleriaSection = () => {
       },
       {
         threshold: 0.1,
-      }
+      },
     );
 
     if (galeriaRef.current) {
@@ -67,7 +67,7 @@ const GaleriaSection = () => {
             className={styles.galeriaCard}
             onClick={() => openModal(index)}
           >
-            <img src={image} alt={`Imagem ${index}`} />
+            <img src={image} alt={`Foto do escritório ${index + 1}`} />
           </li>
         ))}
       </ul>
