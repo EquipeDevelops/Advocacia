@@ -616,3 +616,191 @@
   background: var(--corPrimaria);
   transform: scale(1.1);
 }
+
+/* Estilos especiais para a notícia do livro (id 7) */
+.bookBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, var(--corSecundaria) 0%, #8b0a3e 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(107, 10, 46, 0.3);
+  animation: badgePulse 2s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.bookTexto {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 2.5rem;
+  text-align: justify;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--corSecundaria);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.videosSection {
+  margin-bottom: 2.5rem;
+}
+
+.videosSectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--corSecundaria);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-titulos);
+  font-weight: 600;
+}
+
+.videosSectionTitle svg {
+  color: #ff0000;
+  font-size: 1.7rem;
+}
+
+.videosGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 177.78%; /* 9:16 aspect ratio for YouTube Shorts */
+  height: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.videoWrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.4);
+}
+
+.videoEmbed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  border: none;
+}
+
+/* Bloqueia cliques no logo do YouTube */
+.videoWrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background: transparent;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.imagensSection {
+  margin-bottom: 2rem;
+}
+
+.imagensGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.imagemWrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+}
+
+.imagemWrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.imagemLivro {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.imagemWrapper:hover .imagemLivro {
+  transform: scale(1.1);
+}
+
+/* Responsividade para layout do livro */
+@media (max-width: 768px) {
+  .bookBadge {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .bookTexto {
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+
+  .videosSectionTitle {
+    font-size: 1.3rem;
+  }
+
+  .videosGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .imagensGrid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bookBadge {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .bookTexto {
+    font-size: 0.95rem;
+    padding: 1rem;
+  }
+
+  .videosSectionTitle {
+    font-size: 1.1rem;
+  }
+
+  .imagensGrid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.75rem;
+  }
+}

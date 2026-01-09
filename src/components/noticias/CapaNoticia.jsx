@@ -30,7 +30,14 @@ const calculaDiferencaDatas = (dataInicio, dataAtual) => {
   }
 };
 
-const CapaNoticia = ({ img, data, titulo, id, onNoticiaClick }) => {
+const CapaNoticia = ({
+  img,
+  data,
+  titulo,
+  id,
+  onNoticiaClick,
+  isDestaque = false,
+}) => {
   const dataAtualBR = dataAtual();
   const diferencaDatas = calculaDiferencaDatas(data, dataAtualBR);
 
@@ -42,7 +49,11 @@ const CapaNoticia = ({ img, data, titulo, id, onNoticiaClick }) => {
   }
 
   return (
-    <article className={styles.noticiaCard}>
+    <article
+      className={`${styles.noticiaCard} ${
+        isDestaque ? styles.destaqueCard : ''
+      }`}
+    >
       <div className={styles.imageContainer}>
         <div
           className={styles.noticiaImage}

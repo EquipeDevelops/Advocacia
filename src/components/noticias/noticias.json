@@ -140,5 +140,38 @@
         "img": "https://i.ibb.co/Wpj4XcGS/Imagem-do-Whats-App-de-2025-08-30-s-22-57-55-6a2b5515.jpg"
       }
     ]
+  },
+  {
+    "id": 7,
+    "img": "https://i.ibb.co/JRjwhXSf/imagem-Livro01.jpg",
+    "titulo": "O Dr. Cristovão de Souza Brito, gestor do escritório Cristovao Brito Advocacia, professor de direito processual penal, lança uma nova obra no mundo jurídico e acadêmico",
+    "data": "31/10/2025",
+    "noticias": [
+      {
+        "id": 1,
+        "texto": "Acordo de não persecução penal: teoria e prática em busca do justo acordo. O livro busca aprofundar conhecimentos sobre este importante instrumento negocial penal, utilizado diariamente para solução de casos penais após o advento da Lei n° 13.964/19. Publicada pela GZ Editora e atualmente disponível também na Nova Livraria, em Maceió, a obra pretende atingir todos os atores processuais penais, como advogados, membros do Ministério Público e da Magistratura, além de outros estudiosos do tema. Para maiores informações e encomendas, fazer contato com o autor via e-mail no campo a baixo no site. Não esqueçam de acompanhar os demais informativos e as redes sociais quanto ao lançamento da obra. Boa leitura!",
+        "img": "https://i.ibb.co/JRjwhXSf/imagem-Livro01.jpg"
+      },
+      {
+        "id": 2,
+        "texto": "",
+        "video": "video01.mp4"
+      },
+      {
+        "id": 3,
+        "texto": "",
+        "video": "video02.mp4"
+      },
+      {
+        "id": 4,
+        "texto": "",
+        "img": "https://i.ibb.co/cXrRcb6M/imagem-Livro03.jpg"
+      },
+      {
+        "id": 5,
+        "texto": "",
+        "img": "https://i.ibb.co/5m3g1mc/imagem-Livro02.jpg"
+      }
+    ]
   }
 ]

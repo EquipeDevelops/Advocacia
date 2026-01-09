@@ -1,9 +1,20 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react';
 import style from './NoticiaModal.module.css';
+import { IoCloseCircle } from 'react-icons/io5';
+import { FaBook, FaVideo } from 'react-icons/fa';
+import video01 from '../../videos/video01.mp4';
+import video02 from '../../videos/video02.mp4';
 
 const NoticiaModal = ({ setActiveModal, noticia }) => {
+  const isNoticiaLivro = noticia?.id === 7;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Mapeamento de vídeos locais
+  const videoMap = {
+    'video01.mp4': video01,
+    'video02.mp4': video02,
+  };
 
   // Prevenir scroll do body quando modal está aberto
   useEffect(() => {
@@ -69,6 +80,15 @@ const NoticiaModal = ({ setActiveModal, noticia }) => {
   const handleDotClick = (index) => {
     setCurrentImageIndex(index);
   };
+
+  // Para a notícia do livro, separar vídeos e imagens
+  const videos = isNoticiaLivro
+    ? noticia.noticias.filter((item) => item.video)
+    : [];
+
+  const imagens = isNoticiaLivro
+    ? noticia.noticias.filter((item) => item.img && !item.video)
+    : noticia.noticias;
 
   return (
     <div
@@ -165,24 +185,83 @@ const NoticiaModal = ({ setActiveModal, noticia }) => {
             </div>
           )}
 
-          {/* Conteúdo das subnotícias com imagens */}
-          {noticia.noticias.map(({ id, texto, img }) => {
-            return (
-              <div key={id} className={style.noticiaItem}>
-                {img && img.trim() !== '' && (
-                  <div
-                    className={style.noticiaImage}
-                    style={{ backgroundImage: `url(${img})` }}
-                  />
-                )}
-                {texto && texto.trim() !== '' && (
-                  <div className={style.textContent}>
-                    <p>{texto}</p>
-                  </div>
-                )}
+          {/* Conteúdo das subnotícias */}
+          {isNoticiaLivro ? (
+            /* Layout especial para notícia do livro */
+            <>
+              {/* Badge de destaque */}
+              <div className={style.bookBadge}>
+                <FaBook /> Novo Lançamento
               </div>
-            );
-          })}
+
+              {/* Texto principal */}
+              {noticia.noticias[0]?.texto && (
+                <p className={style.bookTexto}>{noticia.noticias[0].texto}</p>
+              )}
+
+              {/* Grid de vídeos locais */}
+              {videos.length > 0 && (
+                <div className={style.videosSection}>
+                  <h3 className={style.videosSectionTitle}>
+                    <FaVideo /> Conheça a obra
+                  </h3>
+                  <div className={style.videosGrid}>
+                    {videos.map((videoItem) => {
+                      const videoSrc = videoMap[videoItem.video];
+                      return videoSrc ? (
+                        <div key={videoItem.id} className={style.videoWrapper}>
+                          <video
+                            src={videoSrc}
+                            controls
+                            className={style.videoEmbed}
+                            preload="metadata"
+                          >
+                            Seu navegador não suporta a tag de vídeo.
+                          </video>
+                        </div>
+                      ) : null;
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {/* Galeria de imagens */}
+              {imagens.length > 0 && (
+                <div className={style.imagensSection}>
+                  <div className={style.imagensGrid}>
+                    {imagens.map((imagem) => (
+                      <div key={imagem.id} className={style.imagemWrapper}>
+                        <img
+                          src={imagem.img}
+                          alt={imagem.texto || 'Imagem do livro'}
+                          className={style.imagemLivro}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </>
+          ) : (
+            /* Layout padrão para outras notícias */
+            noticia.noticias.map(({ id, texto, img }) => {
+              return (
+                <div key={id} className={style.noticiaItem}>
+                  {img && img.trim() !== '' && (
+                    <div
+                      className={style.noticiaImage}
+                      style={{ backgroundImage: `url(${img})` }}
+                    />
+                  )}
+                  {texto && texto.trim() !== '' && (
+                    <div className={style.textContent}>
+                      <p>{texto}</p>
+                    </div>
+                  )}
+                </div>
+              );
+            })
+          )}
         </div>
       </div>
     </div>
