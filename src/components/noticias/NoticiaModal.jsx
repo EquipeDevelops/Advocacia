@@ -191,7 +191,7 @@ const NoticiaModal = ({ setActiveModal, noticia }) => {
             <>
               {/* Badge de destaque */}
               <div className={style.bookBadge}>
-                <FaBook /> Novo Lançamento
+                <FaBook /> Lançamento
               </div>
 
               {/* Texto principal */}

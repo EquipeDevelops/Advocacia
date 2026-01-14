@@ -246,7 +246,7 @@
 
 /* Badge "Novo Lançamento" para notícia em destaque */
 .destaqueCard .imageContainer::after {
-  content: '✨ Novo Lançamento';
+  content: '✨ Lançamento';
   position: absolute;
   top: 1rem;
   left: 1rem;

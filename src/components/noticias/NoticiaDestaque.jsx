@@ -47,7 +47,7 @@ const NoticiaDestaque = ({ noticia }) => {
 
         <div className={styles.destaqueHeader}>
           <div className={styles.badge}>
-            <FaBook /> Novo Lançamento
+            <FaBook /> Lançamento
           </div>
           <h2 className={styles.destaqueTitle}>{noticia.titulo}</h2>
           <p className={styles.destaqueData}>{noticia.data}</p>
